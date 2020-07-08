@@ -1,0 +1,121 @@
+//-----------------------------------fonts----------------------
+@font-face
+{
+    font-family: mainFont;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+@font-face
+{
+    font-family: mainFontCond;
+    src: url(../fonts/MyriadPro-Cond.otf);
+}
+
+//-------------------------------global elements---------------
+body
+{
+    font-size: 100%;
+    font-family: mainFont, sans-serif;
+}
+
+#container-main
+{
+    width: 100%;
+    background-color: @backg-color;
+}
+
+#nav-main
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: radial-gradient(circle farthest-corner at right, cyan, #00bff3);
+    box-shadow: 0 2px 3px black;
+
+    color: white;
+
+    h1
+    {
+        flex-grow: 4;
+        font-size: 3em;
+        padding: 1vw 0 0 2vw;
+    }
+    ul
+    {
+        display: flex;
+        padding-right: 2vw;
+        flex-grow: 2;
+        color: black;
+
+        li
+        {
+            padding: 0;
+            font-size: 1.5em;
+        }
+
+        a
+        {
+            flex-grow: 1;
+            padding: 2vw;
+            text-align: center;
+        }
+        a:hover
+        {
+            transition: ease-in 0.2s;
+            background-color: @main-color;
+        }
+    }
+}
+
+.first-letter
+{
+    font-size: 3em;
+    float: left;
+}
+
+.cond
+{
+    font-family: mainFontCond;
+}
+
+@keyframes dissolve
+{
+    0%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+.ease-in
+{
+    animation: 1s ease-in 0s 1 dissolve;
+}
+
+//-------------------------responsiveness------------------
+@media (max-width: 768px)
+{
+    body
+    {
+        font-size: 75%;
+    } 
+}
+
+@media (max-width: 560px)
+{
+    body
+    {
+        font-size: 60%;
+    } 
+}
+
+//------------------------colors---------------------------
+@backg-color: #eef;
+
+@main-color: #00bff3;

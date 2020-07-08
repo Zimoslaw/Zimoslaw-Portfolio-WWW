@@ -1,0 +1,48 @@
+/*-----------------------------
+
+Elements used only in index.html
+
+-----------------------------*/
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/header_index.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 6em;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+header p:nth-child(1) {
+  padding: 0 15vw 1vw 0;
+}
+header p:nth-child(2) {
+  padding: 1vw 0 0 10vw;
+}
+main {
+  padding: 5vw 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main h2 {
+  font-size: 5em;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2vw;
+}
+main section {
+  width: 50%;
+  font-size: 1.5em;
+}
+main .leaflet {
+  width: 100%;
+  padding: 1vw;
+  background-image: radial-gradient(circle farthest-corner at top, cyan, #00bff3);
+}
